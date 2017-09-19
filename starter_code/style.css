@@ -3,7 +3,19 @@
 	box-sizing: border-box; 
 	/* ^^^ Forces all elements to include content, padding, and border as part of their width/height calculation: 
 	http://www.w3schools.com/cssref/css3_pr_box-sizing.asp */
+	font-family: 'Proza Libre', sans-serif;
+	font-size: 12px;
+	borde
+
 }
+
+h1{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 10px 20px 10px;
+}
+
+
 
 /* 
 	Use Google Fonts to make all of the text Proza Libre.
@@ -13,8 +25,31 @@
 
 /*-------- Main Styles --------*/
 
+.formSection{
+	float: left;
+	clear: right;
+	border-radius: 20px;
+	background: #E3E6EC;
+	height: 800px;
+	width: 300px;
+	
+}
+
+.results{
+	float: right;
+	clear: left;
+	margin: 0 auto;
+	text-align: left;
+	height: 150px;
+	width: 150px;
+	background: #C8DBB3;
+	border-radius: 20px;
+}
+
 /* 
 	Make the main container the full width of the page.
+
+
 
 	Make the two inner containers (the form and the results) float side by side, on the left side of the screen.
 

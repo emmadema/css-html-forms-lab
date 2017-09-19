@@ -3,6 +3,7 @@
 <head>
 	<title>CSS HTML Forms Lab</title>
 	<link rel="stylesheet" href="style.css">
+	<link href="https://fonts.googleapis.com/css?family=Proza+Libre" rel="stylesheet">
 </head>
 <body>
 	<section id="main">
@@ -69,7 +70,7 @@
 							  <label for="check1">powerful</label>
 							</div>
 							<div class="check">
-								<input id="check2" type="checkbox" name="adjective-2" value="honed">
+								<input checked id="check2" type="checkbox" name="adjective-2" value="honed">
 								<label for="check2">honed</label> 
 							</div>
 							<div class="check">
@@ -97,22 +98,144 @@
 	<script type="text/javascript">
 
 		var main = $('#main');
-		function makeResults() {
+		function makeResults(data) {
+			console.log(data);
 
-			$( "<section class='container results'><h1>A True Story:</h1>" ).appendTo(main);
+			$( "<section class='container results'><h1>A True Story:</h1>").appendTo(main);
 
-			// JS Native:
+
+			$("<section class='container results'><p>Once upon a time there was a Developer named NAME. NAME came to General Asssembly to VERB1 the great mountain of programming knowledge.MISSION, NAME shouted. Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN. Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN. In the end, their success can be contributed entirely to their ADJECTIVE2 NOUN2. In the end, their success can be contributed entirely to their  ADJECTIVE2 NOUN2.</p>").appendTo(main);
+
+
+			$(".results p").text($(".results p").text().replace("NAME",	$("#name").val()));
+
+			$(".results p").text($(".results p").text().replace("NAME",	$("#name").val()));
+
+			$(".results p").text($(".results p").text().replace("VERB1", $("select#verb-1").val()));
+
+			$(".results p").text($(".results p").text().replace("MISSION", $("#mission").val()));
+
+			$(".results p").text($(".results p").text().replace("NAME",	$("#name").val()));
+
+			$(".results p").text($(".results p").text().replace("SENTIMENT", $("#sentiment").val()));
+
+			$(".results p").text($(".results p").text().replace("NAME",	$("#name").val()));
+
+			$(".results p").text($(".results p").text().replace("NOUN",	$("#noun-1").val()));
+
+			$(".results p").text($(".results p").text().replace("SENTIMENT", $("#sentiment").val()));
+
+			$(".results p").text($(".results p").text().replace("NAME",	$("#name").val()));
+
+			$(".results p").text($(".results p").text().replace("NOUN",	$("#noun-1").val()));
+
+			$(".results p").text($(".results p").text().replace("ADJECTIVE2", $("input[type=checkbox][name=adjective-2]:checked").val()));
+
+			$(".results p").text($(".results p").text().replace("NOUN2", $("#noun-2").val()));//need to rpint out multiple with comma
+
+			$(".results p").text($(".results p").text().replace("ADJECTIVE2", $("input[type=checkbox][name=adjective-2]:checked").val())); //need to print out multiple with coma
+
+			$(".results p").text($(".results p").text().replace("NOUN2", $("#noun-2").val()));
+
+}
+
+			//$("#name").val();
+			//$("select#verb-1").val();//"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+
+
+			//$("#mission").val();//""MISSION", NAME shouted."
+			//$("#name").val();
+
+			//$("#sentiment").val();
+			//$("#name").val();
+			//$("#noun-1").val(); //"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN." 
+
+			
+			//$("input[type=checkbox][name=noun-2]:checked").val();
+
+			//$("input[type=radio][name=adjective-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+
+			//$("input[type=radio][name=adjective-2]:checked").val();
+			//$("input[type=checkbox][name=noun-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2." ))
+		
+
+
+
+					// JS Native:
 			// var results = document.createElement('section');
 			// results.innerHTML = '<h1>' + 'A true story:' + '</h1>';
 			// results.className = 'container results';
 			// main.appendChild(results);
-		};
 
 		$("form").on("submit", function(event){
+			event.preventDefault(); // Stop the form from submitting
+				$("#name").val(); //"Once upon a time there was a Developer named NAME."
 
-		    // Stop the form from submitting
 
-	    	// Run the 'makeResults' function seen above
+
+			$("#name").val();
+			$("select#verb-1").val();//"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+
+
+			$("#mission").val();//""MISSION", NAME shouted."
+			$("#name").val();
+
+			$("#sentiment").val();
+			$("#name").val();
+			$("#noun-1").val(); //"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN." 
+
+			
+			$("input[type=checkbox][name=noun-2]:checked").val();
+
+			$("input[type=radio][name=adjective-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+
+			$("input[type=radio][name=adjective-2]:checked").val();
+			$("input[type=checkbox][name=noun-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2." //"Once upon a time there was a Developer named NAME."
+
+
+
+			$("#name").val();
+			$("select#verb-1").val();//"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+
+
+			$("#mission").val();//""MISSION", NAME shouted."
+			$("#name").val();
+
+			$("#sentiment").val();
+			$("#name").val();
+			$("#noun-1").val(); //"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN." 
+
+			
+			$("input[type=checkbox][name=noun-2]:checked").val();
+
+			$("input[type=radio][name=adjective-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+
+			$("input[type=radio][name=adjective-2]:checked").val();
+			$("input[type=checkbox][name=noun-2]:checked").val();//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+
+	    	var formData = $(this).serialize();
+	    	//console.log("form data is: ", formData);
+
+
+	    	makeResults(formData);
+
+	    	}); // Run the'makeResults' function seen above
+
+	    
+	    
+
+	    	 	//"Once upon a time there was a Developer named NAME."
+
+
+	    	 //"NAME came to General Asssembly to VERB1 the great mountain of programming knowledge."
+
+	    	//""MISSION", NAME shouted."
+
+	    	 //"Though SENTIMENT, NAME was able to overcome all obstacles with the power of their NOUN."
+
+	    	//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
+
+	    	//"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 
 	    	/*
 			
@@ -129,7 +252,8 @@
 				"In the end, their success can be contributed entirely to their " + ADJECTIVE2[list each one checked, comma-separated] + NOUN2."
 
 	    	*/ 
-		});
+		
+
 	</script>
 
 </body>
