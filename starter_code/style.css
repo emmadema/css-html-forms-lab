@@ -9,11 +9,7 @@
 
 }
 
-h1{
-	font-size: 24px;
-	font-weight: bold;
-	margin: 20px 10px 20px 10px;
-}
+
 
 
 
@@ -38,13 +34,60 @@ h1{
 .results{
 	float: right;
 	clear: left;
-	margin: 0 auto;
+	margin-bottom: 600px;
+	margin-top: 0;
+	margin-left: 50px;
 	text-align: left;
 	height: 150px;
 	width: 150px;
 	background: #C8DBB3;
 	border-radius: 20px;
+
 }
+
+h1{
+	font-size: 24px;
+	font-weight: bold;
+	margin: 20px 10px 20px 10px;
+	display: block;
+	position: absolute;
+}
+
+#name{
+	margin-left: 40px;
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+#verb1{
+	margin: 20px;
+
+}
+
+#sentiment{
+	margin: 20px;
+}
+
+#mission{
+	margin: 20px;
+}
+
+.radioButtons{
+	margin: 20px;
+}
+
+#noun1{
+	margin: 20px;
+}
+
+.checkboxes{
+	margin: 20px;
+}
+
+#noun2{
+	margin: 20px;
+}
+
 
 /* 
 	Make the main container the full width of the page.
