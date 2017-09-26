@@ -11,11 +11,15 @@ $(document).ready(function() {
 		var name = ($('#name').val());
 		var verbOne = ($('#verb-1').val());
 		var mission = ($('#mission').val());
-		var sentiment = ($('.radioButtons').val());
+		var radio1 = ($('#radio1').val());
+		var radio2 = ($('#radio2').val());
+		var radio3 = ($('#radio3').val());
 		var nounOne = ($('#noun-1').val());
-		var sentiment2 = ($('.checkboxes').val());
+		var check1 = ($('#check1').val());
+		var check2 = ($('#check2').val());
+		var check3 = ($('#check3').val());
 		var nounTwo = ($('#noun-2').val());
-		var paragraph =["Once upon a time there was a Devloper named " + name + ". " + name + " came to General Assembly to " + verbOne + " the great mountain of programming knowledge. " + mission + ", " + name + "shouted. Though " + sentiment + ", " + name + " was able to overcome all obstacles with the power of their " + nounOne + "In the end, their success can be contributed entirely to their " + sentiment2 + nounTwo + "."];
+		var paragraph =["Once upon a time there was a Devloper named " + name + ". " + name + " came to General Assembly to " + verbOne + " the great mountain of programming knowledge. " + mission + ", " + name + "shouted. Though " + radio1 + radio2 + radio3 + ", " + name + " was able to overcome all obstacles with the power of their " + nounOne + "In the end, their success can be contributed entirely to their " + check1 + check2 + check3 + nounTwo + "."];
 
 		e.preventDefault();
 
