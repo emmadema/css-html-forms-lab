@@ -6,17 +6,19 @@ $(document).ready(function() {
 //fill in form data with Jquery
 
 	
-		var name = $('#name');
-		var verbOne = $('#verb-1');
-		var mission = $('#mission');
-		var sentiment = $('.radioButtons');
-		var nounOne = $('#noun-1');
-		var sentiment2 = $('.checkboxes');
-		var nounTwo = $('#noun-2');
-		var paragraph = ["Once upon a time there was a Devloper named ", + name.val() + name.val() + " came to General Assembly to ", + verbOne.val() + "the great mountain of programming knowledge. ", + mission.val() + ",", + name.val() + "shouted. Though ", + sentiment.val() + ", " + name.val() + " was able to overcome all obstacles with the power of their ", + nounOne.val() + "In the end, their success can be contributed entirely to their ", + sentiment2.val() + nounTwo.val() + "."];
-
+		
 	$('form').on("submit", function (e){
+		var name = ($('#name').val());
+		var verbOne = ($('#verb-1').val());
+		var mission = ($('#mission').val());
+		var sentiment = ($('.radioButtons').val());
+		var nounOne = ($('#noun-1').val());
+		var sentiment2 = ($('.checkboxes').val());
+		var nounTwo = ($('#noun-2').val());
+		var paragraph =["Once upon a time there was a Devloper named " + name + ". " + name + " came to General Assembly to " + verbOne + " the great mountain of programming knowledge. " + mission + ", " + name + "shouted. Though " + sentiment + ", " + name + " was able to overcome all obstacles with the power of their " + nounOne + "In the end, their success can be contributed entirely to their " + sentiment2 + nounTwo + "."];
+
 		e.preventDefault();
+
 		//console.log("form submitted");
 		//console.log(paragraph);
 		$("#main").append(paragraph);
