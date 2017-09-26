@@ -5,26 +5,7 @@ $(document).ready(function() {
 
 //fill in form data with Jquery
 
-	/*$('form').on("submit", function makeResults(data){ //allows form to be submitted on button click
-			//alert("Form Submitted!");
-		$('input#name').val();
-			console.log('name');
-		$('input#verb1').val();
-		$('input#mission').val();
-
-	});
-
-	makeResults(data);*/
-
-	$(function() {
-		$('form').on("submit", function (e){
-			var input = $("input").val();
-			console.log(input);
-			$(".results").append(input);
-		});
-	});
-
-	$(function() {
+	
 		var name = $('#name');
 		var verbOne = $('#verb-1');
 		var mission = $('#mission');
@@ -32,17 +13,37 @@ $(document).ready(function() {
 		var nounOne = $('#noun-1');
 		var sentiment2 = $('.checkboxes');
 		var nounTwo = $('#noun-2');
+		var paragraph = ["Once upon a time there was a Devloper named " + name.val() + name.val() + " came to General Assembly to " + verbOne.val() + "the great mountain of programming knowledge. " + mission.val() + "," + name.val() + "shouted. Though " + sentiment.val() + ", " + name.val() + " was able to overcome all obstacles with the power of their " + nounOne.val() + "In the end, their success can be contributed entirely to their " + sentiment2.val() + nounTwo.val() + ". In the end, their success can be contributed entirely to their  " + sentiment2.val() + nounTwo.val() + "."];
 
-		$('#name').text(name.val());
-		$('#verb-1').text(verbOne.val());
-		$('#mission').text(mission.val());
-		$('.radioButtons').text(sentiment.val());
-		$('#noun-1').text(nounOne.val());
-		$('.checkboxes').text(sentiment2.val());
-		$('#noun-2').text(nounTwo.val());
+	$('form').on("submit", function (e){
+		e.preventDefault();
+		//console.log("form submitted");
+		//console.log(paragraph);
+		$("#main").append(paragraph);
 
+	
+		
+	
+		//name.val();
+		//verbOne.val();
+		//mission.val();
+		//sentiment.val();
+		//nounOne.val();
+		//sentiment2.val();
+		//nounTwo.val();
+		//Once upon a time there was a Developer named NAME. 
+		//NAME came to General Asssembly to 
+		//VERB1 the great mountain of programming knowledge.
+		//MISSION, NAME shouted. 
+		//Though SENTIMENT, NAME was able to overcome all obstacles with the power of their 
+		//NOUN.
+		//In the end, their success can be contributed entirely to their 
+		//ADJECTIVE2 
+		//NOUN2. In the end, their success can be contributed entirely to their  
+		//ADJECTIVE2 
+		//NOUN2.
 	});
-
+}); 
 
 
 
@@ -97,5 +98,5 @@ $(document).ready(function() {
 			makeResults(formData);
 
 		}*/
-});    
+   
 	    	
