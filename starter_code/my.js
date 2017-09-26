@@ -13,7 +13,7 @@ $(document).ready(function() {
 		var nounOne = $('#noun-1');
 		var sentiment2 = $('.checkboxes');
 		var nounTwo = $('#noun-2');
-		var paragraph = ["Once upon a time there was a Devloper named " + name.val() + name.val() + " came to General Assembly to " + verbOne.val() + "the great mountain of programming knowledge. " + mission.val() + "," + name.val() + "shouted. Though " + sentiment.val() + ", " + name.val() + " was able to overcome all obstacles with the power of their " + nounOne.val() + "In the end, their success can be contributed entirely to their " + sentiment2.val() + nounTwo.val() + ". In the end, their success can be contributed entirely to their  " + sentiment2.val() + nounTwo.val() + "."];
+		var paragraph = ["Once upon a time there was a Devloper named ", + name.val() + name.val() + " came to General Assembly to ", + verbOne.val() + "the great mountain of programming knowledge. ", + mission.val() + ",", + name.val() + "shouted. Though ", + sentiment.val() + ", " + name.val() + " was able to overcome all obstacles with the power of their ", + nounOne.val() + "In the end, their success can be contributed entirely to their ", + sentiment2.val() + nounTwo.val() + "."];
 
 	$('form').on("submit", function (e){
 		e.preventDefault();
